@@ -1,0 +1,14 @@
+/Users/tgs/Ngoding/HelloDotnet/bin/Debug/net10.0/HelloDotnet
+/Users/tgs/Ngoding/HelloDotnet/bin/Debug/net10.0/HelloDotnet.deps.json
+/Users/tgs/Ngoding/HelloDotnet/bin/Debug/net10.0/HelloDotnet.runtimeconfig.json
+/Users/tgs/Ngoding/HelloDotnet/bin/Debug/net10.0/HelloDotnet.dll
+/Users/tgs/Ngoding/HelloDotnet/bin/Debug/net10.0/HelloDotnet.pdb
+/Users/tgs/Ngoding/HelloDotnet/obj/Debug/net10.0/HelloDotnet.GeneratedMSBuildEditorConfig.editorconfig
+/Users/tgs/Ngoding/HelloDotnet/obj/Debug/net10.0/HelloDotnet.AssemblyInfoInputs.cache
+/Users/tgs/Ngoding/HelloDotnet/obj/Debug/net10.0/HelloDotnet.AssemblyInfo.cs
+/Users/tgs/Ngoding/HelloDotnet/obj/Debug/net10.0/HelloDotnet.csproj.CoreCompileInputs.cache
+/Users/tgs/Ngoding/HelloDotnet/obj/Debug/net10.0/HelloDotnet.dll
+/Users/tgs/Ngoding/HelloDotnet/obj/Debug/net10.0/refint/HelloDotnet.dll
+/Users/tgs/Ngoding/HelloDotnet/obj/Debug/net10.0/HelloDotnet.pdb
+/Users/tgs/Ngoding/HelloDotnet/obj/Debug/net10.0/HelloDotnet.genruntimeconfig.cache
+/Users/tgs/Ngoding/HelloDotnet/obj/Debug/net10.0/ref/HelloDotnet.dll
