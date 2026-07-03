@@ -12,3 +12,4 @@
 /Users/tgs/Ngoding/HelloDotnet/obj/Debug/net10.0/HelloDotnet.pdb
 /Users/tgs/Ngoding/HelloDotnet/obj/Debug/net10.0/HelloDotnet.genruntimeconfig.cache
 /Users/tgs/Ngoding/HelloDotnet/obj/Debug/net10.0/ref/HelloDotnet.dll
+/Users/tgs/Ngoding/HelloDotnet/obj/Debug/net10.0/HelloDotnet.sourcelink.json
