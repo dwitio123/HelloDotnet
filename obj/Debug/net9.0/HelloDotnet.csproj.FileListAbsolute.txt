@@ -1,0 +1,14 @@
+C:\Users\denny\Documents\.NET勉強する\HelloDotnet\bin\Debug\net9.0\HelloDotnet.exe
+C:\Users\denny\Documents\.NET勉強する\HelloDotnet\bin\Debug\net9.0\HelloDotnet.deps.json
+C:\Users\denny\Documents\.NET勉強する\HelloDotnet\bin\Debug\net9.0\HelloDotnet.runtimeconfig.json
+C:\Users\denny\Documents\.NET勉強する\HelloDotnet\bin\Debug\net9.0\HelloDotnet.dll
+C:\Users\denny\Documents\.NET勉強する\HelloDotnet\bin\Debug\net9.0\HelloDotnet.pdb
+C:\Users\denny\Documents\.NET勉強する\HelloDotnet\obj\Debug\net9.0\HelloDotnet.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\denny\Documents\.NET勉強する\HelloDotnet\obj\Debug\net9.0\HelloDotnet.AssemblyInfoInputs.cache
+C:\Users\denny\Documents\.NET勉強する\HelloDotnet\obj\Debug\net9.0\HelloDotnet.AssemblyInfo.cs
+C:\Users\denny\Documents\.NET勉強する\HelloDotnet\obj\Debug\net9.0\HelloDotnet.csproj.CoreCompileInputs.cache
+C:\Users\denny\Documents\.NET勉強する\HelloDotnet\obj\Debug\net9.0\HelloDotnet.dll
+C:\Users\denny\Documents\.NET勉強する\HelloDotnet\obj\Debug\net9.0\refint\HelloDotnet.dll
+C:\Users\denny\Documents\.NET勉強する\HelloDotnet\obj\Debug\net9.0\HelloDotnet.pdb
+C:\Users\denny\Documents\.NET勉強する\HelloDotnet\obj\Debug\net9.0\HelloDotnet.genruntimeconfig.cache
+C:\Users\denny\Documents\.NET勉強する\HelloDotnet\obj\Debug\net9.0\ref\HelloDotnet.dll

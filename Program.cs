@@ -40,6 +40,87 @@ Console.WriteLine($"{laptop.Ram} GB");
 Console.WriteLine($"Rp{laptop.Price}");
 Console.WriteLine("-------------------------");
 
+// --------------------------------------------
+Student student = new ()
+{
+    Name = "Owi",
+    Age = 54
+};
+student.Introduce();
+Console.WriteLine("-------------------------");
+
+// --------------------------------------------
+Book book = new()
+{
+    Title = "Bumi Datar",
+    Author = "TGS",
+    Price = 100000
+};
+book.PrintInfo();
+Console.WriteLine("-------------------------");
+
+// --------------------------------------------
+BankAccount account = new("Wokwi");
+account.Deposit(500000);
+account.Withdraw(200000);
+account.ShowBalance();
+Console.WriteLine("-------------------------");
+
+// --------------------------------------------
+ICalculator calculator = new Calculator();
+Console.WriteLine(calculator.Add(10, 6));
+Console.WriteLine("-------------------------");
+
+// --------------------------------------------
+IAnimal animal = new Duck();
+animal.Speak();
+Console.WriteLine("-------------------------");
+
+// --------------------------------------------
+// Exercise
+Vehicle vehicle = new Car();
+vehicle.Start();
+Console.WriteLine("-------------------------");
+
+// Challenge
+List<Animal> animals = new()
+{    
+    new Monkey(),
+    new Dog()
+};
+
+foreach (var animaru in animals)
+{
+    animaru.Speak();
+}
+
+Console.WriteLine("-------------------------");
+
+// --------------------------------------------
+// Exercise
+try
+{
+    Console.Write("Masukkan angka pertama: ");
+    int a = int.Parse(Console.ReadLine()!);
+
+    Console.Write("Masukkan angka kedua: ");
+    int b = int.Parse(Console.ReadLine()!);
+
+    Console.WriteLine($"Hasil = {a / b}");
+}
+catch (DivideByZeroException)
+{
+    Console.WriteLine("Pembagian dengan nol tidak diperbolehkan.");
+}
+catch (FormatException)
+{
+    Console.WriteLine("Input harus berupa angka.");
+}
+finally
+{
+    Console.WriteLine("Program selesai.");
+}
+
 public class Developer
 {
     public string Name { get; set; } = "";
@@ -67,3 +148,155 @@ public class Laptop
     public int Ram { get; set; }
     public double Price { get; set; }
 }
+
+// --------------------------------------------
+// Exercise
+public class Student
+{
+    public required string Name { get; set; }
+    public int Age { get; set; }
+
+    public Student()
+    {
+    }
+
+    public void Introduce()
+    {
+        Console.WriteLine($"Halo, saya {Name}, umur {Age}");
+    }
+}
+
+// Challenge
+public class Book
+{
+    public required string Title { get; set; }
+    public required string Author { get; set; }
+    public int Price { get; set; }
+
+    public Book() {
+
+    }
+
+    public void PrintInfo()
+    {
+        Console.WriteLine($"Title: {Title}");
+        Console.WriteLine($"Author: {Author}");
+        Console.WriteLine($"Price: {Price}");
+    }
+}
+
+// --------------------------------------------
+// Exercise
+public class BankAccount
+{
+    public string Owner { get; }
+    public decimal Balance { get; private set; }
+    public BankAccount(string owner) 
+    {
+        Owner = owner;
+    }
+    
+    public void Deposit(decimal amount)
+    {
+        Balance += amount;
+    }
+
+    public void Withdraw(decimal amount)
+    {
+        if (amount > Balance)
+        {
+            Console.WriteLine("Saldo tidak mencukupi");
+        }
+        else 
+        {
+            Balance -= amount;
+        }
+    }
+
+    public void ShowBalance()
+    {
+        Console.WriteLine($"{Owner} memiliki saldo sebesar {Balance}");
+    }
+}
+
+// --------------------------------------------
+// Exercise
+public interface ICalculator
+{
+    int Add(int a, int b);
+}
+
+public class Calculator : ICalculator
+{
+    public int Add(int a, int b)
+    {
+        return a + b;
+    }
+}
+
+// --------------------------------------------
+// Challenge
+public interface IAnimal
+{
+    void Speak();
+}
+
+public class Cat : IAnimal
+{
+    public void Speak()
+    {
+        Console.WriteLine("Meok");
+    }
+}
+
+public class Duck : IAnimal
+{
+    public void Speak()
+    {
+        Console.WriteLine("Wik Wik");
+    }
+}
+
+// --------------------------------------------
+// Exercise
+public class Vehicle
+{
+    public virtual void Start()
+    {
+        Console.WriteLine("Vehicle started");
+    }
+}
+
+public class Car : Vehicle
+{
+    public override void Start()
+    {
+        Console.WriteLine("Car engine started");
+    }
+}
+
+// Challenge
+public class Animal
+{
+    public virtual void Speak()
+    {
+        Console.WriteLine("Sound");
+    }
+}
+
+public class Monkey : Animal
+{
+    public override void Speak()
+    {
+        Console.WriteLine("Ooh ooh");
+    }
+}
+
+public class Dog : Animal
+{
+    public override void Speak()
+    {
+        Console.WriteLine("Guk guk");
+    }
+}
+
