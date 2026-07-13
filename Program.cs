@@ -98,28 +98,106 @@ Console.WriteLine("-------------------------");
 
 // --------------------------------------------
 // Exercise
-try
-{
-    Console.Write("Masukkan angka pertama: ");
-    int a = int.Parse(Console.ReadLine()!);
+// try
+// {
+//     Console.Write("Masukkan angka pertama: ");
+//     int a = int.Parse(Console.ReadLine()!);
 
-    Console.Write("Masukkan angka kedua: ");
-    int b = int.Parse(Console.ReadLine()!);
+//     Console.Write("Masukkan angka kedua: ");
+//     int b = int.Parse(Console.ReadLine()!);
 
-    Console.WriteLine($"Hasil = {a / b}");
-}
-catch (DivideByZeroException)
+//     Console.WriteLine($"Hasil = {a / b}");
+// }
+// catch (DivideByZeroException)
+// {
+//     Console.WriteLine("Pembagian dengan nol tidak diperbolehkan.");
+// }
+// catch (FormatException)
+// {
+//     Console.WriteLine("Input harus berupa angka.");
+// }
+// finally
+// {
+//     Console.WriteLine("Program selesai.");
+// }
+
+// --------------------------------------------
+// Exercise
+List<DeveloperIndo> developers = new()
 {
-    Console.WriteLine("Pembagian dengan nol tidak diperbolehkan.");
-}
-catch (FormatException)
+    new DeveloperIndo { Name = "Prabowo", Experience = 2 },
+    new DeveloperIndo { Name = "Gibran", Experience = 2 },
+    new DeveloperIndo { Name = "Jokowi", Experience = 5 },
+    new DeveloperIndo { Name = "Megawati", Experience = 10 }
+};
+
+
+var seniorDevelopers = developers.Where(d => d.Experience >= 3);
+foreach (var developer in seniorDevelopers)
 {
-    Console.WriteLine("Input harus berupa angka.");
+    Console.WriteLine($"{developer.Name} - {developer.Experience} tahun");
 }
-finally
+
+//Challenge
+Console.WriteLine("-------------------------");
+var allDevelopers = developers.Select(d => d.Name);
+foreach (var name in allDevelopers)
 {
-    Console.WriteLine("Program selesai.");
+    Console.WriteLine(name);
 }
+Console.WriteLine("-------------------------");
+
+var sorthighestExperience = developers.OrderByDescending(d => d.Experience);
+foreach (var developer in sorthighestExperience)
+{
+    Console.WriteLine($"{developer.Name} - {developer.Experience} tahun");
+}
+Console.WriteLine("-------------------------");
+
+var findDeveloper = developers.FirstOrDefault(d => d.Name == "Jokowi");
+if (findDeveloper != null)
+{
+    Console.WriteLine($"Ditemukan: {findDeveloper.Name} - {findDeveloper.Experience} tahun");
+}
+else
+{
+    Console.WriteLine("Developer tidak ditemukan.");
+}
+Console.WriteLine("-------------------------");
+
+// --------------------------------------------
+// Exercise
+static async Task SayHelloAsync()
+{
+    Console.WriteLine("Loading...");
+    await Task.Delay(2000);
+    Console.WriteLine("Hei Antek-Antek Async!");
+}
+
+await SayHelloAsync();
+Console.WriteLine("-------------------------");
+
+static async Task<string> GetNameAsync()
+{
+    await Task.Delay(1000);
+    return "Prabowo";
+}
+
+string nameAsing = await GetNameAsync();
+Console.WriteLine($"Nama: {nameAsing}");
+Console.WriteLine("-------------------------");
+
+// Exercise
+static async Task<int> CalculateAsync(int a, int b)
+{
+    Console.WriteLine("Menghitung...");
+    await Task.Delay(2000);
+    return a + b;
+}
+Console.WriteLine("Mulai");
+int result = await CalculateAsync(10, 6);
+Console.WriteLine($"Hasil: {result}");
+Console.WriteLine("Selesai");
 
 public class Developer
 {
@@ -299,4 +377,15 @@ public class Dog : Animal
         Console.WriteLine("Guk guk");
     }
 }
+
+// --------------------------------------------
+// Exercise
+public class DeveloperIndo
+{
+    public string Name { get; set; } = "";
+    public int Experience { get; set; }
+}
+
+// --------------------------------------------
+// Exercise
 
